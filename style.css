@@ -1,0 +1,244 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ec297b;
+    margin-right: 20px;
+}
+
+#logo {
+    height:auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#search, #bag {
+    max-width: 30px;
+    margin-left: 20px;
+}
+
+/* home page */
+/* carousel styling */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    margin: 100px 0 50px 0;
+}
+
+.carousel img {
+    width: 800px;
+    height: 300px;
+    object-fit: cover;
+    display:none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px 4px rgba(255, 255, 255, 0.7);
+}
+
+/* carousel  */
+button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px;
+    margin: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: .25rem;
+    padding: 5px 10px;
+    color:white;
+    background-color: rgba(243, 182, 198, 0.5);
+}
+
+.carousel-button:hover{
+    color: black;
+    background-color: (243, 182, 198, 1);
+}
+
+#prevbutton {
+    left: 1rem;
+}
+
+#nextbutton{
+    right: 1rem;
+}
+
+/* featured products */
+.featured {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 50px;
+    /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+}
+
+/* products */
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 200px;
+    height:200px;
+}
+
+h1 {
+font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+p {
+font-size: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.item:hover {
+    opacity: 0.5;
+}
+
+/* form styling */
+
+
+    form {
+        background-color: #Ffe9ee;
+        padding: 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    form label {
+        max-width: 100px;
+        text-align: right;
+        margin-right: 10px;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 30%;
+    }
+
+    form input[type="submit"] {
+        background-color: #ec297b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        width: 25%;
+    }
+
+
+/* footer styling */
+
+
+     footer {
+         background-color: #Ffe9ee;
+         padding: 20px 0;
+         margin-top: 20px;
+     }
+
+     .footer-content {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+     }
+
+     .logo {
+         flex: 1;
+         max-width: 100px;
+     }
+
+     #footer-logo {
+        height: 100px;
+     }
+
+     .subscribe {
+         flex: 2;
+         text-align: center;
+     }
+
+     .subscribe input[type="email"] {
+         padding: 10px;
+         width: 20%;
+         border: none;
+         border-radius: 5px;
+         margin-bottom: 10px;
+     }
+
+     .subscribe button {
+         background-color: #ec297b;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         padding: 10px 20px;
+         cursor: pointer;
+     }
+
+     .social-media {
+         /* flex: 1; */
+         text-align: right;
+     }
+
+     .social-media a {
+        font-size: 40px;
+         color: #ec297b;
+         text-decoration: none;
+         margin-right: 20px;
+     }
+
+     .copyright {
+         text-align: center;
+         margin-top: 20px;
+     }
+
+     /* #Ffe9ee footer background
+     #ec297b dark pink
+     #ed83b5 medium pink
+     #fff48b yellow
+
+      */
