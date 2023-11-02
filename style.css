@@ -79,6 +79,8 @@ h2, h1{
 h5{
     max-width: 28vh;
     margin: 3% auto;
+    text-transform: uppercase;
+    color: #ec297b;
 }
 
 p {
@@ -232,6 +234,9 @@ footer {
 .subscribe input[type="email"] {
     width: 50%;
 }
+ .logo{
+    max-width: 100%;
+ }
   }
   
 /* Media query for tablet */

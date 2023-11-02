@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let slideWidth = slides[0].clientWidth;
     let slideIndex = 0;
 
+    // responsive sizing
     function setSlideWidth() {
         slideWidth = slides[0].clientWidth;
         updateCarousel();
     }
 
+    //proceeds to next slide
     function nextSlide() {
         if (slideIndex < slides.length - 1) {
             slideIndex++;
@@ -22,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
         carousel.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
     }
 
+
     window.addEventListener("resize", setSlideWidth);
     setSlideWidth();
-    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    // Change slide every 5 seconds
+    setInterval(nextSlide, 5000); 
 });
