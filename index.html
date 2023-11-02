@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
+    <title> Product Grid </title>
+    </head><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -18,49 +22,54 @@
             <a href="index.html"> <img id="logo" src="photos/logo.png"> </a>
         </div>
 
-        <div>
+        <div class="nav-icons">
             <img id="search" src="photos/search.svg">
             <img id="bag" src="photos/bag.svg">
         </div>
     </nav>
 
     <section class="carousel-container">
-        
-        <button id="prevButton" class="carousel-button">	&larr;</button>
-        
         <div class="carousel">
-            <img src="testimonial-photos/letter.png" alt="">
-            <img src="testimonial-photos/pencil.png" alt="">
-            <img src="testimonial-photos/crayon.png" alt="">
+            <div class="carousel-slide">
+                <img src="photos/sale.png" />
+            </div>
+            <div class="carousel-slide">
+                <img src="photos/collection.png" />
+            </div>
+            <div class="carousel-slide">
+                <img src="photos/name.png" />
+            </div>
         </div>
-    
-        <button id="nextButton" class="carousel-button">&rarr;</button>
+
+    </section>
     
     </section>
 
+        <h2> Featured Items </h2>
+
     <section class="featured">
         <div class="item" >
-            <img src="photos/product9.png" alt="TAN Dream & Deurim Album ">
-            <h1> $22.99 </h1>
-            <p> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </p>
+            <img class="grid-image" src="photos/product9.png" alt="TAN Dream & Deurim Album ">
+            <h3> $22.99 </h3>
+            <h5> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </h5>
         </div>
 
         <div class="item" >
-            <img src="photos/product10.png" alt="TAN Dream & Deurim Album ">
-            <h1> $22.99 </h1>
-            <p> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </p>
+            <img class="grid-image" src="photos/product10.png" alt="TAN Dream & Deurim Album ">
+            <h3> $22.99 </h3>
+            <h5> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </h5>
         </div>
 
         <div class="item" >
-            <img src="photos/product11.png" alt="TAN Dream & Deurim Album ">
-            <h1> $22.99 </h1>
-            <p> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </p> 
+            <img class="grid-image" src="photos/product11.png" alt="TAN Dream & Deurim Album ">
+            <h3> $22.99 </h3>
+            <h5> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </h5>
         </div>
 
         <div class="item" >
-            <img src="photos/product12.png" alt="TAN Dream & Deurim Album ">
-            <h1> $22.99 </h1>
-            <p> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </p>
+            <img class="grid-image" src="photos/product12.png" alt="TAN Dream & Deurim Album ">
+            <h3> $22.99 </h3>
+            <h5> TAN 1ST SINGLE ALBUM DREAM & DEURIM META ALBUM PLATFORM VER | 2 ALBUMS SET </h5>
         </div>
     </section>
 
@@ -69,13 +78,11 @@
             <div class="logo">
                 <img id="footer-logo" src="photos/logo.png" alt="Logo">
             </div>
-
             <div class="subscribe">
                 <h3>Subscribe to our email newsletter</h3>
                 <input type="email" placeholder="Enter your email">
                 <button>Subscribe</button>
             </div>
-
             <div class="social-media">
                 <i><a class="fa fa-instagram socials" href="https://instagram.com" target="_blank" ></a></i>
 
@@ -84,10 +91,11 @@
                 <i><a class="fa fa-twitter" href="https://www.twitter.com" target="_blank"></a></i>
             </div>
         </div>
-
         <div class="copyright">
             &copy; 2023 Starlight. All rights reserved.
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

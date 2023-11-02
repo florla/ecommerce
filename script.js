@@ -1,48 +1,28 @@
-//testimonial carousel js
+document.addEventListener("DOMContentLoaded", function () {
+    const carousel = document.querySelector(".carousel");
+    const slides = document.querySelectorAll(".carousel-slide");
+    let slideWidth = slides[0].clientWidth;
+    let slideIndex = 0;
 
-// declaring variables to allow javascript to interact with elements
+    function setSlideWidth() {
+        slideWidth = slides[0].clientWidth;
+        updateCarousel();
+    }
 
-const prevButton = document.getElementById("prevButton");
-const nextButton = document.getElementById("nextButton");
-
-const carousel = document.querySelector(".carousel");
-const images = document.querySelectorAll(".carousel img");
-
-
-
-//initializes the currentIndex to 0 to keep track of what image is being displayed 
-let currentIndex = 0;
-
-
-//function is changing display properties for each image depending on our if else statement 
-function showImage(index) {
-    images.forEach((image, i) => {
-        if (i === index) {
-            image.style.display = "block";
+    function nextSlide() {
+        if (slideIndex < slides.length - 1) {
+            slideIndex++;
         } else {
-            image.style.display = "none";
+            slideIndex = 0;
         }
-    });
-}
+        updateCarousel();
+    }
 
+    function updateCarousel() {
+        carousel.style.transform = `translateX(-${slideIndex * slideWidth}px)`;
+    }
 
-
-// creating functions for previous and next buttons
-function prevImage() {
-    currentIndex = (currentIndex - 1 + images.length) % images.length;
-    showImage(currentIndex);
-}
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % images.length;
-    showImage(currentIndex);
-}
-
-
-//linking functions to buttons to ensure the correct function is called when clicking
-prevButton.addEventListener("click", prevImage);
-nextButton.addEventListener("click", nextImage);
-
-
-//initially displays the image at current index, when page first loads it will show the first image(0)
-showImage(currentIndex);
+    window.addEventListener("resize", setSlideWidth);
+    setSlideWidth();
+    setInterval(nextSlide, 5000); // Change slide every 5 seconds
+});
